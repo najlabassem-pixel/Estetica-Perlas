@@ -1,0 +1,27 @@
+/* Espacio del logo arriba de la navbar */
+.logo-container {
+    background-color: #fce9f3;
+    padding-left: 40px;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #5a3a4f;
+    margin: 0;
+}
+
+/* Navbar estilo rosa pastel (D1) */
+.navbar {
+    background-color: #f8d7e8 !important;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #5a3a4f !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #b35386 !important;
+}
