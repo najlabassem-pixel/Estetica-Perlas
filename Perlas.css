@@ -10,6 +10,13 @@
     color: #5a3a4f;
     margin-left: 40px;
 }
+.header-top {
+    background-image: url("fondo perlas.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    padding: 10px 0;
+}
 
 /* Navbar estilo rosa pastel (D1) */
 .navbar {
