@@ -33,6 +33,49 @@
     color: #b35386 !important;
 }
 .carousel-item img {
-    max-height: 400px; /* cambia la altura si querés */
-    object-fit: cover;
+    max-height: 350px;   /* o lo que necesites */
+    width: 70%;          /* achica el ancho */
+    object-fit: contain; /* muestra toda la imagen SIN recortes */
+    margin: 50px auto 20 auto;  /* ⬅️ agrega espacio arriba */
+    display: block;
+    background-color: #0000; /* opcional, por si queda espacio */
+}
+
+/* Fondo borroso detrás de cada imagen del carrusel */
+.carousel-item {
+    position: relative;
+    overflow: visible;
+}
+
+.carousel-item::before {
+    content: "";
+    position: fixed;
+    top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+    inset: 0;
+    background-image: var(--bg-image); /* la definimos con JS */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    opacity: 0.85;
+    z-index: -1;
+}
+
+.carousel-item * {
+    position: relative;
+    z-index: 5; /* pone la imagen adelante del fondo */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(46%) sepia(19%) saturate(1500%) hue-rotate(290deg) brightness(90%) contrast(85%);
+}
+
+/* Más visibles (sin transparencia) */
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1 !important;
+    z-index: 5 !important; /* Más alto que la imagen */
 }
