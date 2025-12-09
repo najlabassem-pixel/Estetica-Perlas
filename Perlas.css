@@ -81,8 +81,16 @@
 }
 
 .bienvenida-titulo {
-    color: #e639ac;              /* color del texto */
-    font-size: 40px;             /* tamaño */
+    color: #e766bc;              /* color del texto */
+    font-size: 60px;             /* tamaño */
     font-family: "Mistral", cursive; /* fuente */
     font-weight: 900;            /* grosor */
+}
+
+.parrafo-unico {
+    font-size: 100px;                                /* tamaño grande */
+    text-align: center;                               /* centrado horizontal */
+    color: rgb(238, 174, 224);                                    /* color blanco */
+    font-family: 'Lucida Handwriting', cursive;      /* fuente cursiva */
+    margin-top: -110px;                               /* lo sube hacia arriba */
 }
