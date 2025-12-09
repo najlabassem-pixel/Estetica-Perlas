@@ -30,7 +30,9 @@
 }
 
 .nav-link:hover {
-    color: #b35386 !important;
+    color: #e2479a !important;
+     transform: scale(1.2);                         /* agranda un 20% */
+     
 }
 .carousel-item img {
     max-height: 350px;   /* o lo que necesites */
