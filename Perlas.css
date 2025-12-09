@@ -79,3 +79,10 @@
     opacity: 1 !important;
     z-index: 5 !important; /* Más alto que la imagen */
 }
+
+.bienvenida-titulo {
+    color: #e639ac;              /* color del texto */
+    font-size: 40px;             /* tamaño */
+    font-family: "Mistral", cursive; /* fuente */
+    font-weight: 900;            /* grosor */
+}
